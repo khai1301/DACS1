@@ -139,6 +139,7 @@ li{
     font-family: "Muli", sans-serif;
     margin-right: 7px;
     margin-left: 7px;
+    
 }
 .search{
     width: 160px;
@@ -291,9 +292,9 @@ li.menubar1:hover .menu-link{
     text-align: left;
     display: table;
     border-radius: 5px;
-    top: 44px;
-    right: 296px;
-    opacity: 0;
+    top: 49px;
+    right: 315px;
+    display: none;
 }
 .menu-header ul.sub-menu li:hover {
     background-color: rgb(228, 222, 222);
@@ -301,7 +302,7 @@ li.menubar1:hover .menu-link{
 .sub-menu li{
     padding: 15px;
 }
-.menubar1:hover .sub-menu{
-    opacity: 1;
-}
 
+.menu-header li:hover ul.sub-menu{
+    display: block;
+}
