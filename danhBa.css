@@ -88,7 +88,7 @@ ul, li{
     height: 80px;
     z-index: 10;
     position: relative;
-    padding: 15px;
+    padding: 0px;
 }
 .flex-headermain{
     display: flex;
@@ -313,6 +313,8 @@ body {
     margin: 0px;
 }
 .wrapper {
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
