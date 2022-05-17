@@ -334,4 +334,126 @@ body {
     text-align: center;
     padding-top: 15px;
 }
-
+.subcribe-background {
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding: 4em 0;
+    background: #157efb;
+}
+.subcribe-container {
+    margin: 0px 210px;
+    padding: 0px 15px;
+}
+.row-sub {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.col-sub {
+    text-align: center;
+    padding: 0px 15px;
+}
+.col-sub>h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+.col-sub>p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 28.8px;
+    margin-bottom: 10px;
+}
+.form-group {
+    display: flex;
+}
+.text-mail {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    height: 52px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid transparent;
+    outline: 0;
+}
+input.button {
+    cursor: pointer;
+    padding: 0px 14px;
+    border: 1px solid transparent;
+    color: #fff !important;
+    background: #5dd28e !important;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 16px;
+}
+.foot {
+    padding: 112px 0px;
+    font-size: 16px;
+    background: #222831;
+    padding: 7em 0;
+}
+.foot-container {
+    margin: 0px 210px;
+    padding: 0px 15px;
+}
+.row-foot {
+    margin: 0px -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col-foot {
+    padding: 0px 10px;
+    width: 20%;
+}
+.content-col>h2 {
+    font-weight: 300;
+    font-size: 23px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.content-col>p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 28.8px;
+}
+.chuc-vu {
+    padding: 0;
+    list-style-type: none;
+    display: table-cell;
+} 
+.element-chuc-vu {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+.link-chucvu {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    align-content: center;
+}
+.ti-location-pin {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+}
+.element-chuc-vu>span {
+    display: table-cell;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+.ti-email {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+}
+.element-chuc-vu>span {
+    display: table-cell;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+.link-chucvu:hover {
+    color: rgb(72, 240, 156);
+}
