@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cửa hàng</title>
+        <link rel="stylesheet" href="cuahang.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <div class="top-bar" >
+                    <div class="flex-row container">
+                        <div class="flex-left">
+                            <ul class="ul-left" >
+                                <li class="header-contact-wrapper">
+                                    <ul id="header-contact" class="ul-contact"> 
+                                        <li class><img src="img\email.jpg" alt="" id="img-email"></li>
+                                        <li class>
+                                            <i class="icon-email" style="font-size: 16px;"></i>
+                                            <a href="mailto:khaihacang123@gmail.com" class="email">
+                                            <span id="email">khaipn.21it@vku.udn.vn</span>
+                                            </a>
+                                            <span id="gach">|</span>
+                                        </li>
+                                        <li class><img src="img\download.jpg" alt="" id="img-phone"></li>
+                                        <li class>
+                                            <a href="tel:0919016614" class="phone">
+                                                <i class="icon-phone"></i>
+                                                <span id="phone">&nbsp;091 901 6614</span>
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-center">
+                            <ul class="ul-center"></ul>
+                        </div>
+                        <div class="flex-right">
+                            <ul class="ul-right">
+                                <li class="account">
+                                    <a href="login.html">
+                                        <span id="account">Đăng nhập / Đăng ký </span>
+                                    </a>
+                                    <span id="gach">|</span>
+                                </li>
+                                <li class="giohang">
+                                    <a href="" title="Giỏ hàng">
+                                        <span class="header-cart-title" id="giohang">Giỏ hàng
+                                        </span>
+                                        <i class="icon-shopping-cart">
+                                            
+                                        </i>
+                                        
+                                    </a>
+                                    <ul class="nav-dropdown nav-dropdown-simple" style>
+                                        <li class="html widget_shopping_cart">
+                                            <div class="widget_shopping_cart_content"></div>
+                                        </li>
+                                        
+                                    </ul>
+                                    
+                                </li>
+                                <li class="img-giohang"><img src="img\giohang1.jpg" alt="" id="img-giohang"></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div  class="header-main">
+                    <header class="header-menu">
+                        <div class="flex-headermain container"> 
+                            
+                            <div class="flex-col logo" id="logo">
+                                <a href="index.html"><img width="400px" height="50px" src="img\logo1.jpg" alt="" id="img-logo"></a>
+                            </div>
+                            <div class="menu">
+                                <ul class="menu-header">
+                                    <li class="menubar1">
+                                        <a href="index.html" class="menu-link">Trang chủ</a>
+                                    </li>
+                                    <li class="menubar1">
+                                        <a href="gioithieu.html" class="menu-link">Giới thiệu</a>
+                                    </li>
+                                    <li class="menubar1">
+                                        <a href="cuahang.html" class="menu-link">Cửa hàng</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Rau củ</a></li>
+                                            <li><a href="">Hải sản</a></li>
+                                            <li><a href="">Thịt trứng</a></li>
+                                            <li><a href="">Trái cây</a></li>
+                                            <li><a href="">Đồ khô</a></li>
+                                            <li><a href="">Đồ uống</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menubar1">
+                                        <a href="./DanhBa/danhBa.html" class="menu-link">Danh bạ nhà nông</a>
+                                    </li>
+                                    <li class="menubar1">
+                                        <a href="./KienThuc/KienThuc.html" class="menu-link">Kiến thức</a>
+                                    </li>
+                                    <li class="menubar1">
+                                        <a href="lienhe.html" class="menu-link">Liên hệ</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="header-search">
+                                <div class="searchform">
+                                    <form action="" role="search" method="get" class="searchform">
+                                        <input type="search" class="search" value placeholder="Tìm kiếm...">
+                                    </form>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </header>       
+                </div>
+            </header>
+            <div class="title">
+                <div class="flex-row container">
+                    <div class="left-title">
+                        <nav class="title-main" >
+                            <a href="index.html" style="font-weight: 100">TRANG CHỦ</a>
+                            <span style="font-weight: 100">/</span>
+                            CỬA HÀNG
+                        </nav>
+                    </div>
+                    <div class="right-title">
+                        <p class="p-title">Hiển thị một kết quả duy nhất</p>
+                        <form action="" method="get" class="order">
+                            <select name="orderby" class="orderby">
+                                <option value="menu-order">Thứ tự mặc định</option>
+                                <option value="popularity">Thứ tự theo mức độ phổ biến</option>
+                                <option value="rating" selected="selected">Thứ tự theo điểm đánh giá</option>
+                                <option value="date">Mới nhất</option>
+                                <option value="price">Thứ tự theo giá: Thấp đến cao</option>
+                                <option value="price-desc">Thứ tự theo giá: Cao xuống thấp</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <main id="main">
+                <div class="main">
+                    <div class="left-main">
+                        <aside class="main1">
+                            <span>Danh mục sản phẩm</span>
+                            <div class="menu-dmsp">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="">Rau củ</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hải sản</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Trái cây</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Đồ uống</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Đồ khô</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Thịt trứng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside class="main2">
+                            <span>Lọc theo giá</span>
+                            <form action="" method="get">
+                                <div class="price_slider">
+                                    <div>
+                                        <div style="width: 100%; left:0"></div>
+                                        <span style="left: 0;" tabindex="0"></span>
+                                        <span tabindex="100" style="left: 100%"></span>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="min_price" id="min_price" value="29000" data-min="29000" placeholder="Giá thấp nhất" style="display: none;">
+                                        <input type="text" name="max_price" id="max_price" value="235000" data-min="235000" placeholder="Giá cao nhất" style="display: none;">
+                                        <button type="submit" class="button">Lọc</button>
+                                        <div class="price_label">
+                                            " Giá "
+                                            <span class="from">29,000&nbsp;đ</span>
+                                            " _ "
+                                            <span class="to">235,000&nbsp;đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </main>
+        </div>      
+    </body>
+</html>
