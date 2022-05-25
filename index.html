@@ -40,7 +40,7 @@
                         <div class="flex-right">
                             <ul class="ul-right">
                                 <li class="account">
-                                    <a href="login.html">
+                                    <a href="">
                                         <span id="account">Đăng nhập / Đăng ký </span>
                                     </a>
                                     <span id="gach">|</span>
@@ -116,7 +116,7 @@
                         
                         </div>
                     </header>
-                    <!-- <div class="box">
+                    <div class="box" id="id01">
                         <div class="login">
                             <h3 class="h3">Đăng nhập</h3>
                             <form action="">
@@ -144,12 +144,12 @@
                                 </p>
                             </form>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="banner">
                         <img src="img\banner.jpg" alt="" id="banner">
                         <nav >
                             <form action="" >
-                                <button >MUA NGAY</button>
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">MUA NGAY</button>
                             </form>
                         </nav>
                         <nav>
@@ -431,6 +431,39 @@
                     <div class="more">
                         <a href="cuahang.html" id="more">Xem thêm</a>
                     </div>
+                    <div class="content">
+                        <p id="p1"><b>Cam kết của chúng tôi</b></p>
+                    </div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img src="./img/slide1.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="./img/slide2.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="./img/slide3.jpg" style="width:100%">
+                        </div>
+<!-- 
+                        <div class="mySlides fade">
+                              <img src="./img/index4.jpg" style="width:50%">
+                          </div> -->
+                        
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                    </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                          <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+                        </div>
                     <section class="subcribe " style="padding-top: 60px;">
                         <div class="subcribe-background">
                             <div class="subcribe-container">
@@ -504,8 +537,6 @@
                                                 <i class="ti-email"></i>
                                                 <span>khaipn.21it@vku.udn.vn</span>
                                             </li>
-                                            
-                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -522,5 +553,46 @@
                 header.classList.toggle("sticky", window.scrollY > 0);
             })
         </script>
+        <!-- js login form -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+        <!--js slide show-->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
     </body>
 </html>
