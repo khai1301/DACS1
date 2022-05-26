@@ -40,7 +40,7 @@
                         <div class="flex-right">
                             <ul class="ul-right">
                                 <li class="account">
-                                    <a href="">
+                                    <a href="login.html">
                                         <span id="account">Đăng nhập / Đăng ký </span>
                                     </a>
                                     <span id="gach">|</span>
@@ -168,7 +168,7 @@
                                 </div>
                                 <div class="space" style="display:block; height: auto; padding-top: 20px;"></div>
                                 <h3>
-                                    <a href="" id="text-menu">Rau củ</a>
+                                    <a href="cuahang.html" id="text-menu">Rau củ</a>
                                 </h3>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                                 </div>
                                 <div class="space" style="display:block; height: auto; padding-top: 20px;"></div>
                                 <h3>
-                                    <a href="" id="text-menu">Hải sản</a>
+                                    <a href="cuahang.html" id="text-menu">Hải sản</a>
                                 </h3>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                                 </div>
                                 <div class="space" style="display:block; height: auto; padding-top: 20px;"></div>
                                 <h3>
-                                    <a href="" id="text-menu">Thịt trứng</a>
+                                    <a href="cuahang.html" id="text-menu">Thịt trứng</a>
                                 </h3>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                                 </div>
                                 <div class="space" style="display:block; height: auto; padding-top: 20px;"></div>
                                 <h3>
-                                    <a href="" id="text-menu">Trái cây</a>
+                                    <a href="cuahang.html" id="text-menu">Trái cây</a>
                                 </h3>
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                                 </div>
                                 <div class="space" style="display:block; height: auto; padding-top: 20px;"></div>
                                 <h3>
-                                    <a href="" id="text-menu">Đồ khô</a>
+                                    <a href="cuahang.html" id="text-menu">Đồ khô</a>
                                 </h3>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 </div>
                                 <div class="space" style="display:block; height: auto; padding-top: 20px;"></div>
                                 <h3>
-                                    <a href="" id="text-menu">Đồ uống</a>
+                                    <a href="cuahang.html" id="text-menu">Đồ uống</a>
                                 </h3>
                             </div>
                         </div>
@@ -470,7 +470,7 @@
                                             <form action="" class="input">
                                                 <div class="form-group">
                                                     <input type="text" class="text-mail" placeholder="Enter email">
-                                                    <input class="button" type="submit" value="Subcribe"></input>
+                                                    <input class="button" type="submit" value="Đăng ký"></input>
                                                     
                                                 </div>
                                             </form>
@@ -481,7 +481,7 @@
                         </div>
                     </section>
                     <!-- Footer -->
-                    <footer class="foot">
+                    <footer class="foot" style="padding-bottom: 20px">
                         <div class="foot-container">
                             <div class="row-foot">
                                 <div class="col-foot">
@@ -589,5 +589,27 @@
               dots[slideIndex-1].className += " active";
             }
             </script>
+            <!--auto slide show-->
+            <script>
+                let slideIndex1 = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex1++;
+                  if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex1-1].style.display = "block";  
+                  dots[slideIndex1-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
     </body>
 </html>

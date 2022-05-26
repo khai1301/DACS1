@@ -439,6 +439,78 @@ body {
 .content-item{
     background-image: url("img/km1.png") ;
 }
+
+/* footer */
+.foot {
+    padding: 112px 0px;
+    font-size: 16px;
+    background: #222831;
+    padding: 7em 0;
+}
+.foot-container {
+    margin: 0px 210px;
+    padding: 0px 15px;
+}
+.row-foot {
+    margin: 0px -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col-foot {
+    padding: 0px 10px;
+    width: 20%;
+}
+.content-col>h2 {
+    font-weight: 300;
+    font-size: 23px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.content-col>p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 28.8px;
+}
+.chuc-vu {
+    padding: 0;
+    list-style-type: none;
+    display: table-cell;
+} 
+.element-chuc-vu {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+.link-chucvu {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    align-content: center;
+}
+.ti-location-pin {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+}
+.element-chuc-vu>span {
+    display: table-cell;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+.ti-email {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+}
+.element-chuc-vu>span {
+    display: table-cell;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+.link-chucvu:hover {
+    color: rgb(72, 240, 156);
+}
   
  
   

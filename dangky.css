@@ -82,18 +82,11 @@ input[type='password'], input[type='text']{
 .h3, .lb{
     font-family: "Muli", sans-serif;
 }
-.a:hover{
-    color: #6abd45;
-}
 #sub_form{
     display: inline;
 }
 button[type='submit']{
     margin-right: 17px;
-}
-body{
-    background: "img\banner.jpg";
-
 }
 .box{
     margin-top: 300px;
@@ -106,7 +99,6 @@ body{
 .title-main{
     padding: 20px 20px;
     text-align: center;
-    
 }
 .abt{
     font-weight: 100; color: #fff; background-color: #6abd45 ; padding: 10px 15px; border-radius: 5px;

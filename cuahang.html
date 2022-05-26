@@ -5,7 +5,6 @@
         <title>Cửa hàng</title>
         <link rel="stylesheet" href="cuahang.css">
     </head>
-    <body>
         <div id="wrapper">
             <header class="header">
                 <div class="top-bar" >
@@ -392,7 +391,7 @@
                 </div>
                 </div>
             </main>
-            <footer class="foot">
+            <footer class="foot" style="padding-bottom: 20px">
                 <div class="foot-container">
                     <div class="row-foot">
                         <div class="col-foot">
@@ -449,6 +448,13 @@
                     </div>
                 </div>
             </footer>
-        </div>      
+        </div>  
+        <!--js nav-->
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector(".header-menu");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>    
     </body>
 </html>

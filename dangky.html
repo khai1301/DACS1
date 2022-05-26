@@ -1,18 +1,13 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Đăng nhập</title>
-        <link rel="stylesheet" href="login.css">
+        <title>Đăng ký</title>
+        <link rel="stylesheet" href="cuahang.css">
+        <link rel="stylesheet" href="dangky.css">
     </head>
     <body >
-        <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Cửa hàng</title>
-        <link rel="stylesheet" href="cuahang.css">
-    </head>
         <div id="wrapper">
             <header class="header">
                 <div class="top-bar" >
@@ -129,14 +124,32 @@
                 <div class="flex-row container">
                     <div class="left-title">
                         <nav class="title-main" >
-                            <h1 href="login.html" style="color: #fff;">ĐĂNG NHẬP</h1>
+                            <h1 href="login.html" style="color: #fff;">ĐĂNG KÝ</h1>
                         </nav>
                     </div>
                 </div>
             </div>
-                <div class="login">
-                    <h3 class="h3">Đăng nhập</h3>
+                <div class="login" >
+                    <h3 class="h3">Đăng ký</h3>
                     <form action="">
+                        <p>
+                            <label for="" class="lb">Họ và tên&nbsp;
+                                <span>*</span>
+                            </label>
+                            <input type="text" name="username">
+                        </p>
+                        <p>
+                            <label for="" class="lb">Giới tính&nbsp;
+                            </label>
+                            <form action="" method="get" class="order">
+                                <select name="sex" class="sex">
+                                    <option value="Nam" class="ot">Nam</option>
+                                    <option value="Nữ" class="ot">Nữ</option>
+                                    <option value="Khác" class="ot">Khác</option>
+                                    
+                                </select>
+                            </form>
+                        </p>
                         <p>
                             <label for="" class="lb">Tên tài khoản hoặc địa chỉ email&nbsp;
                                 <span>*</span>
@@ -149,20 +162,26 @@
                             </label>
                             <input type="password" name="password">
                         </p>
+                        <p>
+                            <label for="" class="lb">Xác nhận mật khẩu&nbsp;
+                                <span>*</span>
+                            </label>
+                            <input type="password" name="password">
+                        </p>
                         <p class="form_row">
-                            <button type="submit" name="login" value="Đăng nhập" class="btdn">Đăng nhập</button>
-                            <label for="" id="sub_form">
+                            <button type="submit" name="login" value="Đăng nhập" class="btdn">Đăng ký</button>
+                            <!-- <label for="" id="sub_form">
                                 <input type="checkbox" name="" id="checkbox" value="forever">
                                 <span>Ghi nhớ mật khẩu</span>
-                            </label>
+                            </label> -->
                         </p>
-                        <p>
+                        <!-- <p>
                             <a href="" class="a">Quên mật khẩu ?</a>
-                        </p>
+                        </p> -->
                         <p style="text-decoration: none;
                         color: #1c1c1c;
-                        font-size: 20px;">Bạn chưa có tài khoản ?
-                            <a class="abt" href="dangky.html" style="">ĐĂNG KÝ NGAY</a>
+                        font-size: 20px;">Bạn đã có tài khoản !
+                            <a class="abt" href="login.html" style="">ĐĂNG NHẬP NGAY</a>
                         </p>
                     </form>
                 </div>
