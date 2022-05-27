@@ -91,9 +91,7 @@
     width:25%;
     padding: 0px 42px;
     margin: 0px 24px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+    
 }
 .member-info p{
     text-align: center;
