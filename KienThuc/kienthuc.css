@@ -461,7 +461,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
-    margin-left: 140px;
+    margin-left: 130px;
 }
 #pr{
     width: 100%;
@@ -473,6 +473,9 @@ body {
     padding-top: 15px;
     color: black;
     font-weight: bold;
+}
+.namepr>a:hover{
+    color: #6abd45;
 }
 /* .price{
     text-align: center;
@@ -509,13 +512,13 @@ body {
 #add:hover{
     background-color: #51bd23;
 }
-.pr:hover{
+/* .pr:hover{
     -webkit-box-shadow: 0 8px 6px -2px rgb(100, 94, 94);
        -moz-box-shadow: 0 8px 6px -2px rgb(82, 79, 79);
             box-shadow: 0 8px 6px -2px rgb(79, 76, 76);
     padding-bottom: 0px;
     margin-top: 0px;
-}
+} */
 .left-title{
     flex: 1;
 }
