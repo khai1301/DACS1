@@ -488,9 +488,9 @@ input.button {
     font-weight: 700;
 }
 #add{
-    color: white;
+    color: red;
     padding: 10px 20px;
-    background-color: #78e34b;
+    background-color: yellow;
 }
 .add{
     text-align: center;
