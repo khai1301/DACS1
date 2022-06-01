@@ -6,6 +6,21 @@
         <title>Đăng ký</title>
         <link rel="stylesheet" href="cuahang.css">
         <link rel="stylesheet" href="dangky.css">
+        <script type="text/javascript" language="javascript">
+            function check(){
+                var fullname = document.getElementById("fullname").value
+                var username = document.getElementById("username").value
+                var password = document.getElementById("password").value
+                var password1 = document.getElementById("password1").value
+
+                if (fullname == "" || username == "" || password == "" || fullname == null || username == null || password == null){
+                    alert("Vui lòng thử lại và điền đầy đủ thông tin!");
+                } else 
+
+                if (password != password1) alert("Vui lòng xác nhận đúng mật khẩu của bạn"); 
+                else alert("Đăng ký thành công");
+            }
+        </script>
     </head>
     <body >
         <div id="wrapper">
@@ -48,7 +63,7 @@
                                     <span id="gach">|</span>
                                 </li>
                                 <li class="giohang">
-                                    <a href="" title="Giỏ hàng">
+                                    <a href="giohang.html" title="Giỏ hàng">
                                         <span class="header-cart-title" id="giohang">Giỏ hàng
                                         </span>
                                         <i class="icon-shopping-cart">
@@ -87,13 +102,13 @@
                                     </li>
                                     <li class="menubar1">
                                         <a href="cuahang.html" class="menu-link">Cửa hàng</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="">Rau củ</a></li>
-                                            <li><a href="">Hải sản</a></li>
-                                            <li><a href="">Thịt trứng</a></li>
-                                            <li><a href="">Trái cây</a></li>
-                                            <li><a href="">Đồ khô</a></li>
-                                            <li><a href="">Đồ uống</a></li>
+                                        <ul class="sub-menu" style="font-weight: 500;font-size: 16px;">
+                                            <li><a href="cuahang.html">Rau củ</a></li>
+                                            <li><a href="cuahang.html">Hải sản</a></li>
+                                            <li><a href="cuahang.html">Thịt trứng</a></li>
+                                            <li><a href="cuahang.html">Trái cây</a></li>
+                                            <li><a href="cuahang.html">Đồ khô</a></li>
+                                            <li><a href="cuahang.html">Đồ uống</a></li>
                                         </ul>
                                     </li>
                                     <li class="menubar1">
@@ -131,12 +146,12 @@
             </div>
                 <div class="login" style="margin-top: 30px">
                     <h3 class="h3">Đăng ký</h3>
-                    <form action="">
+                    <form name="dangky" action=""  method="post">
                         <p>
                             <label for="" class="lb">Họ và tên&nbsp;
                                 <span>*</span>
                             </label>
-                            <input type="text" name="username">
+                            <input type="text" name="fullname" id="fullname">
                         </p>
                         <p>
                             <label for="" class="lb">Giới tính&nbsp;
@@ -154,30 +169,23 @@
                             <label for="" class="lb">Tên tài khoản hoặc địa chỉ email&nbsp;
                                 <span>*</span>
                             </label>
-                            <input type="text" name="username">
+                            <input type="text" name="username" id="username"> 
                         </p>
                         <p>
                             <label for="" class="lb">Mật khẩu&nbsp;
                                 <span>*</span>
                             </label>
-                            <input type="password" name="password">
+                            <input type="password" name="password" id="password">
                         </p>
                         <p>
                             <label for="" class="lb">Xác nhận mật khẩu&nbsp;
                                 <span>*</span>
                             </label>
-                            <input type="password" name="password">
+                            <input type="password" name="password" id="password1">
                         </p>
                         <p class="form_row">
-                            <button type="submit" name="login" value="Đăng nhập" class="btdn">Đăng ký</button>
-                            <!-- <label for="" id="sub_form">
-                                <input type="checkbox" name="" id="checkbox" value="forever">
-                                <span>Ghi nhớ mật khẩu</span>
-                            </label> -->
+                            <button type="submit" name="login" value="Đăng ký" class="btdn" onclick="check()">Đăng ký</button>
                         </p>
-                        <!-- <p>
-                            <a href="" class="a">Quên mật khẩu ?</a>
-                        </p> -->
                         <p style="text-decoration: none;
                         color: #1c1c1c;
                         font-size: 20px;">Bạn đã có tài khoản !

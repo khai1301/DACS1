@@ -300,34 +300,7 @@ aside>span{
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
 }
-/*
-.form1{
-    background: #fff;
-}
-.price_slider{
-    padding: 30px 15px 15px 15px;
-    font-size: 0.8em;
-}
-.sub-price{
-    height: 5px;
-    border-radius: 99px;
-    position: relative;
-    text-align: left;
-    margin-bottom: 1em;
-    background: #f1f1f1;
-}
-#sub_price{
-    position: absolute;
-    opacity: .5;
-    border-radius: 99px;
-    z-index: 1;
-    font-size: 10px;
-    display: block;
-    border: 0;
-    background-color: #666;
-    top: 0;
-    height: 100%;
-} */
+
 .pr_list{
     font-size: 14px;
     font-weight: bold;
