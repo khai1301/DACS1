@@ -4,15 +4,18 @@
         <meta charset="utf-8">
         <title>Đăng nhập</title>
         <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="cuahang.css">
+        <!-- <script>
+            function check(){
+                var tk = document.getElementById("tk").value
+                var mk = document.getElementById("mk").value
+
+                 
+                else alert("Đăng nhập thành công"); 
+            }
+        </script> -->
     </head>
     <body >
-        <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Cửa hàng</title>
-        <link rel="stylesheet" href="cuahang.css">
-    </head>
         <div id="wrapper">
             <header class="header">
                 <div class="top-bar" >
@@ -141,16 +144,16 @@
                             <label for="" class="lb">Tên tài khoản hoặc địa chỉ email&nbsp;
                                 <span>*</span>
                             </label>
-                            <input type="text" name="username">
+                            <input type="text" name="username" id="tk">
                         </p>
                         <p>
                             <label for="" class="lb">Mật khẩu&nbsp;
                                 <span>*</span>
                             </label>
-                            <input type="password" name="password">
+                            <input type="password" name="password" id="mk">
                         </p>
                         <p class="form_row">
-                            <button type="submit" name="login" value="Đăng nhập" class="btdn">Đăng nhập</button>
+                            <button type="submit" name="login" value="Đăng nhập" class="btdn" onclick="check()">Đăng nhập</button>
                             <label for="" id="sub_form">
                                 <input type="checkbox" name="" id="checkbox" value="forever">
                                 <span>Ghi nhớ mật khẩu</span>
@@ -231,6 +234,23 @@
                 var header = document.querySelector(".header-menu");
                 header.classList.toggle("sticky", window.scrollY > 0);
             })
-        </script>    
+        </script>  
+        
+        <script type="text/javascript">
+            function dangnhap(){
+                var tk = document.getElementById("tk").value
+                var mk = document.getElementById("mk").value
+
+                if (tk == "" || tk == null ){
+                    alert("Vui lòng nhập tài khoản!");
+                } else if ( mk == "" || mk == null ) {
+                    alert("Vui lòng nhập mật khẩu!");
+                } else 
+            
+                if (tk == "khai" && mk == "123"){
+                    location.href("index.html");
+                }
+            }
+        </script>
     </body>
 </html>

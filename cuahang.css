@@ -359,6 +359,7 @@ ul.pr_list>ul>li>a>img{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 #pr{
     width: 100%;
@@ -490,4 +491,144 @@ background: #fff;
   opacity: 0.99;
 }
 
+.nav_bars-btn {
+    width: 30px;
+    height: 30px;
+    color: black;
+    display: none;
+    margin-left: 10px;
+}
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.menu_mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.menu_header-mobile {
+    margin-top: 54px;
+}
+
+.menubar1-mobile {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0px;
+    font-size: 1.4rem;
+    
+}
+
+.nav_moblie-close{
+    width: 25px;
+    height: 25px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.nav_input {
+    display: none;
+}
+.nav_input:checked ~ .nav_overlay {
+    display: block;
+}
+
+.nav_input:checked ~ .menu_mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.nav_input:checked ~ .flex-left {
+    display: none;
+}
+ /*responsive mobile*/
+ @media only screen and (max-width: 46.1875em) {
+    .main1, .main3 {
+        display: none;
+    }
+    .pr {
+        max-width: 40%;
+        flex-basis: 40%;
+    }
+    .main {
+        padding-left: 90px;
+    }
+    .nav_bars-btn {
+        display: block;
+    }
+    .flex-headermain {
+        display: none;
+    }
+    .right-title {
+        display: none;
+    }
+    .left-title {
+        margin-left: 10px;
+    }
+    .foot-container {
+        margin: 0px 50px;
+    }
+    
+ }
+/*respon tablet*/
+ @media only screen and (max-width: 1024px) {
+    .main1, .main3 {
+        display: none;
+    }
+    .pr {
+        max-width: 47%;
+        flex-basis: 47%;
+    }
+    .main {
+        padding-left: 90px;
+    }
+    .nav_bars-btn {
+        display: block;
+    }
+    .flex-headermain {
+        display: none;
+    }
+    .right-title {
+        display: none;
+    }
+    .left-title {
+        margin-left: 10px;
+    }
+    /* .foot-container {
+        margin: 0px 150px;
+    } */
+    .top-bar {
+        display: none;
+    }
+    .header-main {
+        margin-top: 15px;
+    }
+    .menubar1-mobile:hover {
+        background-color: #51bd23;
+    }
+    .menubar1-mobile:hover .menu_link-mobile{
+        color: #fff;
+    }
+    .menu_header-mobile {
+        padding: 0px;
+    }
+    .menubar1-mobile {
+        padding-left: 15px;
+    }
+ }
 
