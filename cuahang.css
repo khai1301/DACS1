@@ -583,7 +583,9 @@ background: #fff;
     .foot-container {
         margin: 0px 50px;
     }
-    
+    .menu_mobile {
+        width: 100%;
+    }
  }
 /*respon tablet*/
  @media only screen and (max-width: 1024px) {
